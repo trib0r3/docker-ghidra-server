@@ -6,6 +6,15 @@
 
 Standing up a Ghidra Server in the cloud is a pain. It doesn't have to be.
 
+## Images
+
+```bash
+bytehow/ghidra-server   latest   1.26GB
+bytehow/ghidra-server   9.1.2    1.26GB
+bytehow/ghidra-server   beta     1.33GB
+bytehow/ghidra-server   dev      1.22GB
+```
+
 > **NOTE:** tag `beta` is built by compiling Ghidra from its `master` branch source
 
 ## Getting Started
