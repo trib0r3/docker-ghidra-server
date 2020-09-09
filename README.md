@@ -26,7 +26,7 @@ Start the server and connect to port 13100 with a Ghidra client that has a **mat
 ### Public Server
 
 ```bash
-$ docker run --init -it --rm \
+$ docker run -it --rm \
     --name ghidra-server \
     -e GHIDRA_USERS="admin bytehow" \
     -v /path/to/repos:/repos \
@@ -37,7 +37,7 @@ $ docker run --init -it --rm \
 ### Local-only Server
 
 ```bash
-$ docker run --init -it --rm \
+$ docker run -it --rm \
     --name ghidra-server \
     -e GHIDRA_USERS="admin bytehow" \
     -e GHIDRA_PUBLIC_HOSTNAME="0.0.0.0" \
