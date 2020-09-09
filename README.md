@@ -19,7 +19,9 @@ bytehow/ghidra-server   dev      1.22GB
 
 ## Getting Started
 
-Start the server and connect to port 13100 with a Ghidra client that has a **matching** version.
+Start the server and connect to port 13100 with a Ghidra client that has a **matching** version. All users will be created as admins and will have initial password `changeme`, which Ghidra will require you to change after you login.
+
+
 
 ### Public Server
 
