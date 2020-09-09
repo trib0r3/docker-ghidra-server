@@ -32,7 +32,7 @@ LABEL maintainer "https://github.com/blacktop"
 
 COPY --from=builder /ghidra /ghidra
 
-RUN apt-get update && apt-get install -y fontconfig libxrender1 libxtst6 libxi6 --no-install-recommends \
+RUN apt-get update && apt-get install -y fontconfig libxrender1 libxtst6 libxi6 dnsutils --no-install-recommends \
     && echo "===> Clean up unnecessary files..." \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives /tmp/* /var/tmp/*
@@ -47,4 +47,4 @@ RUN mkdir /repos
 EXPOSE 13100 13101 13102
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD [ "client" ]
+CMD [ "server" ]
