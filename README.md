@@ -55,7 +55,7 @@ Find a bug? Want more features? Find something missing in the documentation? Let
 ## Credits
 
 - NSA Research Directorate [https://www.ghidra-sre.org/](https://www.ghidra-sre.org/)
-- blacktop's docker-ghidra [project]("https://github.com/blacktop")
+- blacktop's [docker-ghidra](https://github.com/blacktop/ghidra-server) project
 
 ### License
 
