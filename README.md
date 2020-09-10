@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/blacktop/docker-ghidra"><h3 align="center">docker-ghidra-server</h3></a>
+  <a href="https://github.com/bytehow/ghidra-server"><h3 align="center">docker-ghidra-server</h3></a>
   <p align="center">Ghidra Server Docker Image</p>
 
 ## Why?
