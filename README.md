@@ -1,37 +1,22 @@
-<p align="center">
-  <a href="https://github.com/bytehow/ghidra-server"><h3 align="center">docker-ghidra-server</h3></a>
-  <p align="center">Ghidra Server Docker Image</p>
+# Docker Ghidra Server
 
 ## Why?
 
 Standing up a Ghidra Server in the cloud is a pain. It doesn't have to be.
 
-## Images
-
-```bash
-bytehow/ghidra-server   latest   1.26GB
-bytehow/ghidra-server   9.1.2    1.26GB
-bytehow/ghidra-server   beta     1.33GB
-bytehow/ghidra-server   dev      1.22GB
-```
-
-> **NOTE:** tag `beta` is built by compiling Ghidra from its `master` branch source
-
 ## Getting Started
 
 Start the server and connect to port 13100 with a Ghidra client that has a **matching** version. All users will be created as admins and will have initial password `changeme`, which Ghidra will require you to change after you login.
-
-
 
 ### Public Server
 
 ```bash
 $ docker run -it --rm \
     --name ghidra-server \
-    -e GHIDRA_USERS="admin bytehow" \
-    -v /path/to/repos:/repos \
+    -e GHIDRA_USERS="admin" \
+    -v $PWD/repos:/repos \
     -p 13100-13102:13100-13102 \
-    bytehow/ghidra-server
+    trib0r3/ghidra-server
 ```
 
 ### Local-only Server
@@ -39,11 +24,11 @@ $ docker run -it --rm \
 ```bash
 $ docker run -it --rm \
     --name ghidra-server \
-    -e GHIDRA_USERS="admin bytehow" \
+    -e GHIDRA_USERS="admin" \
     -e GHIDRA_PUBLIC_HOSTNAME="0.0.0.0" \
     -v /path/to/repos:/repos \
     -p 13100-13102:13100-13102 \
-    bytehow/ghidra-server
+    trib0r3/ghidra-server
 ```
 
 
@@ -58,15 +43,11 @@ $ docker run -it --rm \
 
 Additional information such as capacity planning and other server configuration aspects can be found by consulting the server documentation provided at `/<GhidraInstallDir>/server/svrREADME.html`
 
-
-## Issues
-
-Find a bug? Want more features? Find something missing in the documentation? Let me know! Please don't hesitate to [file an issue](https://github.com/bytehow/docker-ghidra-server/issues/new)
-
 ## Credits
 
 - NSA Research Directorate [https://www.ghidra-sre.org/](https://www.ghidra-sre.org/)
 - blacktop's [docker-ghidra](https://github.com/blacktop/ghidra-server) project
+- originator [bytehow](https://github.com/bytehow/docker-ghidra-server)
 
 ### License
 
