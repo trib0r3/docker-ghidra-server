@@ -16,7 +16,7 @@ $ docker run -it --rm \
     -e GHIDRA_USERS="admin" \
     -v $PWD/repos:/repos \
     -p 13100-13102:13100-13102 \
-    trib0r3/ghidra-server
+    trib0re/docker-ghidra-server
 ```
 
 ### Local-only Server
@@ -26,9 +26,9 @@ $ docker run -it --rm \
     --name ghidra-server \
     -e GHIDRA_USERS="admin" \
     -e GHIDRA_PUBLIC_HOSTNAME="0.0.0.0" \
-    -v /path/to/repos:/repos \
+    -v $PWD/repos:/repos \
     -p 13100-13102:13100-13102 \
-    trib0r3/ghidra-server
+    trib0re/docker-ghidra-server
 ```
 
 
