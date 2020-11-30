@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian-openjdk:latest
+FROM balenalib/raspberry-pi-debian-openjdk:8-stretch
 
 ENV VERSION 9.2_PUBLIC 
 ENV DL https://www.ghidra-sre.org/ghidra_${VERSION}_20201113.zip
